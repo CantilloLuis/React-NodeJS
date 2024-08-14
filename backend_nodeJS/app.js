@@ -9,6 +9,10 @@ app.use(morgan("tiny"))
 app.use(cors())
 
 
+const autosRoutes = require("./routes/autos");
+
+
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -20,6 +24,7 @@ mongoose
     });
 
 
+app.use('/api/autos', autosRoutes);
 
 
 
