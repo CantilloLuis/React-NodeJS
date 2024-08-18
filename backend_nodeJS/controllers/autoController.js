@@ -1,8 +1,8 @@
-const Equipo = require("../models/equipo");
+const Auto = require("../models/auto");
 
-exports.getEquipo = (req, res) => {
-    Equipo.find().then((equipoResult) => {
-        res.status(200).json(equipoResult);
+exports.getAuto = (req, res) => {
+    Auto.find().then((autoResult) => {
+        res.status(200).json(autoResult);
     });
 };
 
