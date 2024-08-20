@@ -6,20 +6,20 @@ exports.getAuto = (req, res) => {
     });
 };
 
-exports.addEquipo = (req, res) => {
-    const equipoAdd = new Equipo({
+exports.addAuto = (req, res) => {
+    const autoAdd = new Auto({
 
 
-        idEquipo: req.body.idEquipo,
-        nombreEquipo: req.body.nombreEquipo,
-        idProyecto: req.body.idProyecto,
-        fecha: req.body.fecha
+        id: req.body.id,
+        nombre: req.body.nombre,
+        cilindraje: req.body.cilindraje,
+        kilometraje: req.body.kilometraje
 
 
     });
 
-    equipoAdd.save().then((createdEquipo) => {
-        console.log(createdEquipo);
+    autoAdd.save().then((createdAuto) => {
+        console.log(createdAuto);
         res.status(201).json("Creado satisfactoriamente");
     });
 };

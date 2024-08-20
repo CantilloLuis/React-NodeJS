@@ -6,7 +6,7 @@ const auto = mongoose.Schema({
 
     id: { type: Number, required: true },
     nombre: { type: String, required: true },
-    cilindrade: { type: String, required: true },
+    cilindraje: { type: String, required: true },
     kilometraje: { type: String, require: true },
 
 
