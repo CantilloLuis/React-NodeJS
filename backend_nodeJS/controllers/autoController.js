@@ -28,26 +28,26 @@ exports.addAuto = (req, res) => {
 
 
 
-exports.updateEquipo = async (req, res) => {
+exports.updateAuto = async (req, res) => {
 
     try {
 
-        const { idEquipo, nombreEquipo, idProyecto, fecha } = req.body
-        let equipo = await Equipo.findById(req.params.id)
+        const { id, nombre, cilindraje, kilometraje } = req.body
+        let auto = await Auto.findById(req.params.id)
 
-        if (!equipo) {
+        if (!auto) {
             res.status(404).json({ msg: "No existe el equipo" })
 
 
         }
-        equipo.idEquipo = idEquipo
-        equipo.nombreEquipo = nombreEquipo
-        equipo.idProyecto = idProyecto
-        equipo.fecha = fecha
+        equipo.id = id
+        equipo.nombre = nombre
+        equipo.cilindraje = cilindraje
+        equipo.kilometraje = kilometraje
 
 
-        equipo = await Equipo.findByIdAndUpdate({ _id: req.params.id }, equipo, { new: true })
-        res.json(equipo)
+        auto = await Auto.findByIdAndUpdate({ _id: req.params.id }, auto, { new: true })
+        res.json(auto)
 
     } catch (error) {
 
