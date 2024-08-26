@@ -59,16 +59,16 @@ exports.updateAuto = async (req, res) => {
 
 
 
-exports.deleteEquipo = (req, res) => {
+exports.deleteAuto = (req, res) => {
     const id = req.params.id;
 
-    Equipo.findByIdAndDelete(id)
+    Auto.findByIdAndDelete(id)
         .then(data => {
             if (!data) {
-                res.status(404).send({ message: `Equipo con id no fue eliminado ${id}. el id es incorrecto` })
+                res.status(404).send({ message: `Auto con id no fue eliminado ${id}. el id es incorrecto` })
             } else {
                 res.send({
-                    message: "Equipo eliminada con exito!"
+                    message: "Auto eliminada con exito!"
                 })
             }
         })
