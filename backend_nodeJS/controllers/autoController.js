@@ -36,7 +36,7 @@ exports.updateAuto = async (req, res) => {
         let auto = await Auto.findById(req.params.id)
 
         if (!auto) {
-            res.status(404).json({ msg: "No existe el equipo" })
+            res.status(404).json({ msg: "No existe el auto" })
 
 
         }
@@ -52,7 +52,7 @@ exports.updateAuto = async (req, res) => {
     } catch (error) {
 
         console.log(error)
-        res.status(500).send("Error al actualizar el equipo")
+        res.status(500).send("Error al actualizar el auto")
     }
 }
 
