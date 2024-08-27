@@ -2,10 +2,12 @@
 
 function vistaPrincipal() {
 
+
+
     return (
         <>
             <br></br>
-            <p class="text-3xl text-gray-900 dark:text-white text-center">Table</p>
+            <p class="text-3xl text-gray-900 dark:text-white text-center">Tabla</p>
             <br></br>
 
 
