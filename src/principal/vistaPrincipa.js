@@ -1,8 +1,9 @@
+import { useState } from 'react';
 
 
 function vistaPrincipal() {
 
-
+    const [getAuto, setAuto] = useState([]);
 
     return (
         <>
