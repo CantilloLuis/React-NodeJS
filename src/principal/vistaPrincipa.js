@@ -10,8 +10,8 @@ function VistaPrincipal() {
         axios.get('')
 
             .then(response => {
-                setAuto(response.data.items);
-                console.log(response.data.items);
+                setAuto(response.data);
+                console.log(response.data);
             })
             .catch(error => {
             });
