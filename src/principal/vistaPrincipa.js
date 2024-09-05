@@ -5,6 +5,8 @@ import axios from 'axios'
 function VistaPrincipal() {
 
     const [getAuto, setAuto] = useState([]);
+    const [getError, setError] = useState("");
+
 
     useEffect(() => {
         axios.get('')
@@ -14,6 +16,7 @@ function VistaPrincipal() {
                 console.log(response.data);
             })
             .catch(error => {
+                setError(error);
             });
     }, []);
 
