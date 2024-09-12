@@ -44,7 +44,7 @@ function VistaPrincipal() {
                     </div>
                     <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
                 </div>
-                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Registrar</button>
+                <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Registrar</button>
             </form>
 
             <br></br>
@@ -71,7 +71,7 @@ function VistaPrincipal() {
                         </tr>
                     </thead>
                     <tbody>
-                        {getAuto.map((auto) => (
+                        {/* {getAuto.map((auto) => (
 
                             <tr key={auto.id} className="border-b border-gray-200 dark:border-gray-700">
                                 < th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800" >
@@ -92,7 +92,7 @@ function VistaPrincipal() {
 
 
                             </tr>
-                        ))}
+                        ))} */}
                     </tbody>
                 </table>
             </div >
