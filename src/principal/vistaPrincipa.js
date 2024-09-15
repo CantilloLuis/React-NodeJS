@@ -28,15 +28,15 @@ function VistaPrincipal() {
             <form class="max-w-sm mx-auto">
                 <div class="mb-5">
                     <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Escriba el nombre del auto</label>
-                    <input type="text" name="nombre" id="nombre" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required />
+                    <input type="text" name="nombre" id="nombre" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Digite el nombre" required />
                 </div>
                 <div class="mb-5">
                     <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Digite el kilometraje</label>
-                    <input type="text" name="kilometraje" id="kilometraje" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                    <input type="text" name="kilometraje" id="kilometraje" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Digite el kilometraje" required />
                 </div>
                 <div class="mb-5">
                     <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Digite el cilindraje</label>
-                    <input type="text" id="cilindraje" name="cilindraje" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required />
+                    <input type="text" id="cilindraje" name="cilindraje" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Digite el cilindraje" required />
                 </div>
                 <div class="flex items-start mb-5">
                     <div class="flex items-center h-5">
