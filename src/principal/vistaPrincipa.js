@@ -71,7 +71,7 @@ function VistaPrincipal() {
                         </tr>
                     </thead>
                     <tbody>
-                        {/* {getAuto.map((auto) => (
+                        {getAuto.map((auto) => (
 
                             <tr key={auto.id} className="border-b border-gray-200 dark:border-gray-700">
                                 < th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800" >
@@ -92,7 +92,7 @@ function VistaPrincipal() {
 
 
                             </tr>
-                        ))} */}
+                        ))}
                     </tbody>
                 </table>
             </div >
