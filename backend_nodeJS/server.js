@@ -41,6 +41,7 @@ const onListening = () => {
     const bind = typeof port === "string" ? "pipe " + port : "port " + port;
 };
 
+//Puerto que se ejecutara.
 const port = normalizePort(process.env.PORT || "3001");
 app.set("port", port);
 
