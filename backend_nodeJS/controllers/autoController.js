@@ -20,7 +20,7 @@ exports.addAuto = (req, res) => {
 
     autoAdd.save().then((createdAuto) => {
         console.log(createdAuto);
-        res.status(201).json("Creado satisfactoriamente");
+        res.status(201).json("Creado satisfactoriamente ");
     });
 };
 
@@ -36,7 +36,7 @@ exports.updateAuto = async (req, res) => {
         let auto = await Auto.findById(req.params.id)
 
         if (!auto) {
-            res.status(404).json({ msg: "No existe el auto" })
+            res.status(404).json({ msg: "No existe el auto en el sistema" })
 
 
         }
@@ -52,7 +52,7 @@ exports.updateAuto = async (req, res) => {
     } catch (error) {
 
         console.log(error)
-        res.status(500).send("Error al actualizar el auto")
+        res.status(500).send("Error al actualizar el auto registrado")
     }
 }
 
