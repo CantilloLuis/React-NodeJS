@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const auto = mongoose.Schema({
 
-
+    // Atributos que se utilizaran y  migraran a la BD
     id: { type: Number, required: true },
     nombre: { type: String, required: true },
     cilindraje: { type: String, required: true },
