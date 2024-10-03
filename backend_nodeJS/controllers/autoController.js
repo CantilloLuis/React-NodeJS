@@ -1,11 +1,13 @@
 const Auto = require("../models/auto");
 
+//Metodo para llamar autos
 exports.getAuto = (req, res) => {
     Auto.find().then((autoResult) => {
         res.status(200).json(autoResult);
     });
 };
 
+//Metodo para agregar autos
 exports.addAuto = (req, res) => {
     const autoAdd = new Auto({
 
@@ -27,7 +29,7 @@ exports.addAuto = (req, res) => {
 
 
 
-
+//Metodo para actualizar carros
 exports.updateAuto = async (req, res) => {
 
     try {
@@ -58,6 +60,7 @@ exports.updateAuto = async (req, res) => {
 
 
 
+//Metodo para eliminar carros
 
 exports.deleteAuto = (req, res) => {
     const id = req.params.id;
