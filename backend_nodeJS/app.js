@@ -16,6 +16,7 @@ const autosRoutes = require("./routes/autos");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// codigo donde realizamos la conexion con mongo atlas
 mongoose
     .connect("", { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
