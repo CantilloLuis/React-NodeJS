@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // codigo donde realizamos la conexion con mongo atlas
 mongoose
-    .connect("", { useNewUrlParser: true, useUnifiedTopology: true })
+    .connect(process.env.URL_MONGODB, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("Estamos conectados");
 
