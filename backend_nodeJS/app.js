@@ -24,7 +24,7 @@ mongoose
 
     });
 
-
+//Ruta de la api de autos
 app.use('/api/autos', autosRoutes);
 
 
