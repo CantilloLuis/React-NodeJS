@@ -11,7 +11,7 @@ exports.getAuto = (req, res) => {
 exports.addAuto = (req, res) => {
     const autoAdd = new Auto({
 
-
+        //capturando los atributos del front
         id: req.body.id,
         nombre: req.body.nombre,
         cilindraje: req.body.cilindraje,
@@ -20,6 +20,7 @@ exports.addAuto = (req, res) => {
 
     });
 
+    //se guardan exitosamente en la bd y se envia un mensaje exitoso.
     autoAdd.save().then((createdAuto) => {
         console.log(createdAuto);
         res.status(201).json("Creado satisfactoriamente ");
